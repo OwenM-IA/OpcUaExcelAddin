@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>OpcUaExcelAddin</AssemblyName>
+    <RootNamespace>OpcUaExcelAddin</RootNamespace>
+    <OutputType>Library</OutputType>
+    <LangVersion>7.3</LangVersion>
+    <Nullable>disable</Nullable>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <GenerateDependencyFile>true</GenerateDependencyFile>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <ExcelDnaCreate32BitAddIn>true</ExcelDnaCreate32BitAddIn>
+    <ExcelDnaCreate64BitAddIn>true</ExcelDnaCreate64BitAddIn>
+    <ExcelDnaPack32BitXllName>OpcUaExcelAddin-x86</ExcelDnaPack32BitXllName>
+    <ExcelDnaPack64BitXllName>OpcUaExcelAddin</ExcelDnaPack64BitXllName>
+    <ExcelDnaPublishPath>publish</ExcelDnaPublishPath>
+    <ExcelDnaPackManagedDependencies>true</ExcelDnaPackManagedDependencies>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="ExcelDna.AddIn" Version="1.9.0" />
+    <PackageReference Include="ExcelDna.Integration" Version="1.9.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="OPCFoundation.NetStandard.Opc.Ua" Version="1.5.378.176" />
+    <PackageReference Include="OPCFoundation.NetStandard.Opc.Ua.Client" Version="1.5.378.176" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="appsettings.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="tags.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="OpcUaExcelAddin.dna" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <Target Name="CopyOpcUaConfigurationToExcelDnaPublish" AfterTargets="Build">
+    <PropertyGroup>
+      <_ExcelDnaPublishDirectory Condition="'$(ExcelDnaPublishPath)' == ''">$(TargetDir)</_ExcelDnaPublishDirectory>
+      <_ExcelDnaPublishDirectory Condition="'$(ExcelDnaPublishPath)' != ''">$(TargetDir)$(ExcelDnaPublishPath)\</_ExcelDnaPublishDirectory>
+    </PropertyGroup>
+    <MakeDir Directories="$(_ExcelDnaPublishDirectory)" />
+    <Copy SourceFiles="appsettings.json;tags.json" DestinationFolder="$(_ExcelDnaPublishDirectory)" SkipUnchangedFiles="true" />
+  </Target>
+</Project>

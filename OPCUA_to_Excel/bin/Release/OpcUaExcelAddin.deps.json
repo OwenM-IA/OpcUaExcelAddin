@@ -1,0 +1,538 @@
+{
+  "runtimeTarget": {
+    "name": ".NETFramework,Version=v4.8/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETFramework,Version=v4.8": {},
+    ".NETFramework,Version=v4.8/": {
+      "OpcUaExcelAddin/1.0.0": {
+        "dependencies": {
+          "ExcelDna.Integration": "1.9.0",
+          "Newtonsoft.Json": "13.0.4",
+          "OPCFoundation.NetStandard.Opc.Ua": "1.5.378.176",
+          "OPCFoundation.NetStandard.Opc.Ua.Client": "1.5.378.176"
+        },
+        "runtime": {
+          "OpcUaExcelAddin.dll": {}
+        }
+      },
+      "BitFaster.Caching/2.6.0": {
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.6.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/BitFaster.Caching.dll": {}
+        }
+      },
+      "BouncyCastle.Cryptography/2.6.2": {
+        "runtime": {
+          "lib/net461/BouncyCastle.Cryptography.dll": {}
+        }
+      },
+      "ExcelDna.Integration/1.9.0": {
+        "runtime": {
+          "lib/net462/ExcelDna.Integration.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/10.0.8": {
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.6.3"
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
+      "Microsoft.Bcl.HashCode/6.0.0": {
+        "runtime": {
+          "lib/net462/Microsoft.Bcl.HashCode.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/10.0.8": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "10.0.8",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.8",
+          "System.Threading.Tasks.Extensions": "4.6.3"
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.8": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "10.0.8",
+          "System.Threading.Tasks.Extensions": "4.6.3"
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging/10.0.8": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "10.0.8",
+          "Microsoft.Extensions.DependencyInjection": "10.0.8",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.8",
+          "Microsoft.Extensions.Options": "10.0.8",
+          "System.Diagnostics.DiagnosticSource": "10.0.8"
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Extensions.Logging.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/10.0.8": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.8",
+          "System.Buffers": "4.6.1",
+          "System.Diagnostics.DiagnosticSource": "10.0.8",
+          "System.Memory": "4.6.3"
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Options/10.0.8": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.8",
+          "Microsoft.Extensions.Primitives": "10.0.8"
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Extensions.Options.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/10.0.8": {
+        "dependencies": {
+          "System.Memory": "4.6.3",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.4": {
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua/1.5.378.176": {
+        "dependencies": {
+          "OPCFoundation.NetStandard.Opc.Ua.Client": "1.5.378.176",
+          "OPCFoundation.NetStandard.Opc.Ua.Configuration": "1.5.378.176",
+          "OPCFoundation.NetStandard.Opc.Ua.Core": "1.5.378.176",
+          "OPCFoundation.NetStandard.Opc.Ua.Gds.Client.Common": "1.5.378.176",
+          "OPCFoundation.NetStandard.Opc.Ua.Gds.Server.Common": "1.5.378.176",
+          "OPCFoundation.NetStandard.Opc.Ua.Security.Certificates": "1.5.378.176",
+          "OPCFoundation.NetStandard.Opc.Ua.Server": "1.5.378.176",
+          "OPCFoundation.NetStandard.Opc.Ua.Types": "1.5.378.176"
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Client/1.5.378.176": {
+        "dependencies": {
+          "BitFaster.Caching": "2.6.0",
+          "OPCFoundation.NetStandard.Opc.Ua.Configuration": "1.5.378.176",
+          "OPCFoundation.NetStandard.Opc.Ua.Core": "1.5.378.176"
+        },
+        "runtime": {
+          "lib/net48/Opc.Ua.Client.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Configuration/1.5.378.176": {
+        "dependencies": {
+          "OPCFoundation.NetStandard.Opc.Ua.Core": "1.5.378.176"
+        },
+        "runtime": {
+          "lib/net48/Opc.Ua.Configuration.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Core/1.5.378.176": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "10.0.8",
+          "Newtonsoft.Json": "13.0.4",
+          "OPCFoundation.NetStandard.Opc.Ua.Security.Certificates": "1.5.378.176",
+          "OPCFoundation.NetStandard.Opc.Ua.Types": "1.5.378.176"
+        },
+        "runtime": {
+          "lib/net48/Opc.Ua.Core.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Gds.Client.Common/1.5.378.176": {
+        "dependencies": {
+          "OPCFoundation.NetStandard.Opc.Ua.Client": "1.5.378.176",
+          "OPCFoundation.NetStandard.Opc.Ua.Core": "1.5.378.176"
+        },
+        "runtime": {
+          "lib/net48/Opc.Ua.Gds.Client.Common.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Gds.Server.Common/1.5.378.176": {
+        "dependencies": {
+          "OPCFoundation.NetStandard.Opc.Ua.Core": "1.5.378.176",
+          "OPCFoundation.NetStandard.Opc.Ua.Security.Certificates": "1.5.378.176",
+          "OPCFoundation.NetStandard.Opc.Ua.Server": "1.5.378.176"
+        },
+        "runtime": {
+          "lib/net48/Opc.Ua.Gds.Server.Common.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Security.Certificates/1.5.378.176": {
+        "dependencies": {
+          "BouncyCastle.Cryptography": "2.6.2",
+          "OPCFoundation.NetStandard.Opc.Ua.Types": "1.5.378.176",
+          "System.Collections.Immutable": "10.0.8",
+          "System.Diagnostics.DiagnosticSource": "10.0.8",
+          "System.Formats.Asn1": "10.0.8",
+          "System.Text.Json": "10.0.8"
+        },
+        "runtime": {
+          "lib/net48/Opc.Ua.Security.Certificates.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Server/1.5.378.176": {
+        "dependencies": {
+          "OPCFoundation.NetStandard.Opc.Ua.Configuration": "1.5.378.176",
+          "OPCFoundation.NetStandard.Opc.Ua.Core": "1.5.378.176"
+        },
+        "runtime": {
+          "lib/net48/Opc.Ua.Server.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Types/1.5.378.176": {
+        "dependencies": {
+          "Microsoft.Bcl.HashCode": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.8",
+          "System.Collections.Immutable": "10.0.8",
+          "System.Diagnostics.DiagnosticSource": "10.0.8",
+          "System.Text.Json": "10.0.8",
+          "System.Threading.Tasks.Extensions": "4.6.3"
+        },
+        "runtime": {
+          "lib/net48/Opc.Ua.Types.dll": {}
+        }
+      },
+      "System.Buffers/4.6.1": {
+        "runtime": {
+          "lib/net462/System.Buffers.dll": {}
+        }
+      },
+      "System.Collections.Immutable/10.0.8": {
+        "dependencies": {
+          "System.Memory": "4.6.3",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
+        },
+        "runtime": {
+          "lib/net462/System.Collections.Immutable.dll": {}
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/10.0.8": {
+        "dependencies": {
+          "System.Memory": "4.6.3",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
+        },
+        "runtime": {
+          "lib/net462/System.Diagnostics.DiagnosticSource.dll": {}
+        }
+      },
+      "System.Formats.Asn1/10.0.8": {
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "runtime": {
+          "lib/net462/System.Formats.Asn1.dll": {}
+        }
+      },
+      "System.IO.Pipelines/10.0.8": {
+        "dependencies": {
+          "System.Buffers": "4.6.1",
+          "System.Memory": "4.6.3",
+          "System.Threading.Tasks.Extensions": "4.6.3"
+        },
+        "runtime": {
+          "lib/net462/System.IO.Pipelines.dll": {}
+        }
+      },
+      "System.Memory/4.6.3": {
+        "dependencies": {
+          "System.Buffers": "4.6.1",
+          "System.Numerics.Vectors": "4.6.1",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
+        },
+        "runtime": {
+          "lib/net462/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.6.1": {
+        "runtime": {
+          "lib/net462/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.1.2": {
+        "runtime": {
+          "lib/net462/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/10.0.8": {
+        "dependencies": {
+          "System.Buffers": "4.6.1",
+          "System.Memory": "4.6.3",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
+        },
+        "runtime": {
+          "lib/net462/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.Json/10.0.8": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "10.0.8",
+          "System.Buffers": "4.6.1",
+          "System.IO.Pipelines": "10.0.8",
+          "System.Memory": "4.6.3",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2",
+          "System.Text.Encodings.Web": "10.0.8",
+          "System.Threading.Tasks.Extensions": "4.6.3"
+        },
+        "runtime": {
+          "lib/net462/System.Text.Json.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.6.3": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
+        },
+        "runtime": {
+          "lib/net462/System.Threading.Tasks.Extensions.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OpcUaExcelAddin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BitFaster.Caching/2.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iF2dMiGpaya8Umwi0OfsGKtq3aMVgHVsBChwQL+NhShEsRorcoTinGf9FFNBnBMwJW2Vm0FqhtOaEBY0+74p6g==",
+      "path": "bitfaster.caching/2.6.0",
+      "hashPath": "bitfaster.caching.2.6.0.nupkg.sha512"
+    },
+    "BouncyCastle.Cryptography/2.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7oWOcvnntmMKNzDLsdxAYqApt+AjpRpP2CShjMfIa3umZ42UQMvH0tl1qAliYPNYO6vTdcGMqnRrCPmsfzTI1w==",
+      "path": "bouncycastle.cryptography/2.6.2",
+      "hashPath": "bouncycastle.cryptography.2.6.2.nupkg.sha512"
+    },
+    "ExcelDna.Integration/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A1nbeRWa+rg3RoO9NV9iqNwQxWb9eVNG+Ki3uCfo8D3U8CT11/fzTIvVT3y2LoCTzqRIPwTysqp9sj42MKYw5Q==",
+      "path": "exceldna.integration/1.9.0",
+      "hashPath": "exceldna.integration.1.9.0.nupkg.sha512"
+    },
+    "Microsoft.Bcl.AsyncInterfaces/10.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-e+kYYRb0HmNo5FTOcjXkP0mIEFHEyygm4ea/iLWpdumsACzCH078nZMfnk6RQFmtSrnNbh654c8nNtmUSwQoow==",
+      "path": "microsoft.bcl.asyncinterfaces/10.0.8",
+      "hashPath": "microsoft.bcl.asyncinterfaces.10.0.8.nupkg.sha512"
+    },
+    "Microsoft.Bcl.HashCode/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GI4jcoi6eC9ZhNOQylIBaWOQjyGaR8T6N3tC1u8p3EXfndLCVNNWa+Zp+ocjvvS3kNBN09Zma2HXL0ezO0dRfw==",
+      "path": "microsoft.bcl.hashcode/6.0.0",
+      "hashPath": "microsoft.bcl.hashcode.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/10.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-daf62xHIrq8pnE709hgaZZN9tSam9TGGepWe1+bE6V3GEuVwJiMs6ib+38lfMCyAJAHiX0vapxBhsuMSV7U+cg==",
+      "path": "microsoft.extensions.dependencyinjection/10.0.8",
+      "hashPath": "microsoft.extensions.dependencyinjection.10.0.8.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-21nbDV60SRPWGIivsyl6lqBeEJNG1sginhhfWgRrr3Ais7aQ12To25OAHQxgoiJkjqy1aQ6RxpZBGYuTi7Ge6A==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/10.0.8",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.10.0.8.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging/10.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-K60JhWC2hN/Gi7TP68tBxSzk5ACWOs7lkmPzsfA8Bcf/IXTajujt2ORMf9rSMk1bsng6Lv4Y3fuxp3bm1+15ug==",
+      "path": "microsoft.extensions.logging/10.0.8",
+      "hashPath": "microsoft.extensions.logging.10.0.8.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/10.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fdVadZmsC8jRP0KvKy8mO8f6GV/HyBvElfcSxEhd+5FM5boAw/01iSaCto5G3G37ApJira4A3pNaVvBv8cUiLQ==",
+      "path": "microsoft.extensions.logging.abstractions/10.0.8",
+      "hashPath": "microsoft.extensions.logging.abstractions.10.0.8.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options/10.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VBD+131DpTNCNDfA4kIyKTiCySvJGNhwibdWBSdFRu7GMfXLXcXODkgA+KStKbbhzraLglZWUN4nXyHgW4JIRA==",
+      "path": "microsoft.extensions.options/10.0.8",
+      "hashPath": "microsoft.extensions.options.10.0.8.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/10.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OBPo4nYhMyIbtueoC10CBm6AGAbo/A9IV8QQ/6ryZS7VvmqpGT7hunazeHLxFawRzn3oLOq4jhqhpBX4tfswWQ==",
+      "path": "microsoft.extensions.primitives/10.0.8",
+      "hashPath": "microsoft.extensions.primitives.10.0.8.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pdgNNMai3zv51W5aq268sujXUyx7SNdE2bj1wZcWjAQrKMFZV260lbqYop1d2GM67JI1huLRwxo9ZqnfF/lC6A==",
+      "path": "newtonsoft.json/13.0.4",
+      "hashPath": "newtonsoft.json.13.0.4.nupkg.sha512"
+    },
+    "OPCFoundation.NetStandard.Opc.Ua/1.5.378.176": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iAKqmfl6BT6RP8AGGFfJbpoM2IgSJf7J6A78M8XWjcWyaDsyIAVGl/QDU2exVlDtkpuPSJTcwiEFBDoJlbY/GQ==",
+      "path": "opcfoundation.netstandard.opc.ua/1.5.378.176",
+      "hashPath": "opcfoundation.netstandard.opc.ua.1.5.378.176.nupkg.sha512"
+    },
+    "OPCFoundation.NetStandard.Opc.Ua.Client/1.5.378.176": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-S69pGBZK73tJIYfR2IqRIl2qy/r4kodeSaOXnwz3hkQtJSd++Ts3C612v3KYIKgK48jkArWOiVXQhdSTKvqwyA==",
+      "path": "opcfoundation.netstandard.opc.ua.client/1.5.378.176",
+      "hashPath": "opcfoundation.netstandard.opc.ua.client.1.5.378.176.nupkg.sha512"
+    },
+    "OPCFoundation.NetStandard.Opc.Ua.Configuration/1.5.378.176": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-96eSjJ1+TyvrP9rgZs5Eb2KGqz666irjmMCQAcM3Cg8k4zNFtkM4+om67vpHLGiGn0YtM1mKOEEpk+0ziLwosw==",
+      "path": "opcfoundation.netstandard.opc.ua.configuration/1.5.378.176",
+      "hashPath": "opcfoundation.netstandard.opc.ua.configuration.1.5.378.176.nupkg.sha512"
+    },
+    "OPCFoundation.NetStandard.Opc.Ua.Core/1.5.378.176": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AavQSop8he3oyJPJLoCEFrXTtltRSTwy0NSS9E11lILrOd4R4Fkki/HR8evlM0yEBPWWySeWm50Afk3InvLJww==",
+      "path": "opcfoundation.netstandard.opc.ua.core/1.5.378.176",
+      "hashPath": "opcfoundation.netstandard.opc.ua.core.1.5.378.176.nupkg.sha512"
+    },
+    "OPCFoundation.NetStandard.Opc.Ua.Gds.Client.Common/1.5.378.176": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MN7HRDASQxLgnvhm9Q+LOJCjQGji8zETD58YR6T6/SEd6hspsmO3Y5TfxlsxTi/+Xd1memIMGjwsDvnqp4a8Ew==",
+      "path": "opcfoundation.netstandard.opc.ua.gds.client.common/1.5.378.176",
+      "hashPath": "opcfoundation.netstandard.opc.ua.gds.client.common.1.5.378.176.nupkg.sha512"
+    },
+    "OPCFoundation.NetStandard.Opc.Ua.Gds.Server.Common/1.5.378.176": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L/ZCzcLtbK4rIN1gz12aKFixYGK1Fpdt+2EN90SwVwj//JYw4F5S0CGNZ0Z6oUADKi7FcFd6BEApEvfxRS+V0w==",
+      "path": "opcfoundation.netstandard.opc.ua.gds.server.common/1.5.378.176",
+      "hashPath": "opcfoundation.netstandard.opc.ua.gds.server.common.1.5.378.176.nupkg.sha512"
+    },
+    "OPCFoundation.NetStandard.Opc.Ua.Security.Certificates/1.5.378.176": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8tuF/PgDzlGtjVjD4UZP9KNOtQrFsM/u/Gn/CHq6XmL5IzBC66bBKyus9/KMGr6RTzgCJnS4EXAdTrTcbfjnIw==",
+      "path": "opcfoundation.netstandard.opc.ua.security.certificates/1.5.378.176",
+      "hashPath": "opcfoundation.netstandard.opc.ua.security.certificates.1.5.378.176.nupkg.sha512"
+    },
+    "OPCFoundation.NetStandard.Opc.Ua.Server/1.5.378.176": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-C3RamTf4kWuCnuKMo18h8mhY3rBtScmQ7CWL2PCIQwP9p8R65c6GmiFYIsg4cgaUHrBmm6JKf07cvya1eLC2FQ==",
+      "path": "opcfoundation.netstandard.opc.ua.server/1.5.378.176",
+      "hashPath": "opcfoundation.netstandard.opc.ua.server.1.5.378.176.nupkg.sha512"
+    },
+    "OPCFoundation.NetStandard.Opc.Ua.Types/1.5.378.176": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kATDAUMKIQ42VJluTmI6+PSQpIukLp/L7sYrdlMddZ5a8tNcEgXumpkEvz6ozKFGc/fUcww57fYb0740aY453g==",
+      "path": "opcfoundation.netstandard.opc.ua.types/1.5.378.176",
+      "hashPath": "opcfoundation.netstandard.opc.ua.types.1.5.378.176.nupkg.sha512"
+    },
+    "System.Buffers/4.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-N8GXpmiLMtljq7gwvyS+1QvKT/W2J8sNAvx+HVg4NGmsG/H+2k/y9QI23auLJRterrzCiDH+IWAw4V/GPwsMlw==",
+      "path": "system.buffers/4.6.1",
+      "hashPath": "system.buffers.4.6.1.nupkg.sha512"
+    },
+    "System.Collections.Immutable/10.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rvMGYko6bcE/ZTpj1Q/EM22rcZNiQyjH+71capjjfmqG+DDncVE4kSaE5ysCv2vEFIHt8+zALWYXgIETFvcFzw==",
+      "path": "system.collections.immutable/10.0.8",
+      "hashPath": "system.collections.immutable.10.0.8.nupkg.sha512"
+    },
+    "System.Diagnostics.DiagnosticSource/10.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rQHsK7Xr8Uz3449860ayVXp/CaLmrhHlMPxbpT/ibOPtp/dTTsr6+f/SxaGO2NzxHf+0siLE0UfdVN5z1I0EgQ==",
+      "path": "system.diagnostics.diagnosticsource/10.0.8",
+      "hashPath": "system.diagnostics.diagnosticsource.10.0.8.nupkg.sha512"
+    },
+    "System.Formats.Asn1/10.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XBaf+5rSEtX3y1zptaff7+KlHgr1Cukq/5V208ORFYP3oqtv+ZouqqgQrTjsiIq/Yc8XxbG1HyHtLx5J7coA7A==",
+      "path": "system.formats.asn1/10.0.8",
+      "hashPath": "system.formats.asn1.10.0.8.nupkg.sha512"
+    },
+    "System.IO.Pipelines/10.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-STVNTIVd+UrYvSo31D2tOOTs19IThdjGDN14FS3/NZb4PWsVakAg/VT4sq+JYWGP/GtazzvXwebWL6LPBAwnFQ==",
+      "path": "system.io.pipelines/10.0.8",
+      "hashPath": "system.io.pipelines.10.0.8.nupkg.sha512"
+    },
+    "System.Memory/4.6.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qdcDOgnFZY40+Q9876JUHnlHu7bosOHX8XISRoH94fwk6hgaeQGSgfZd8srWRZNt5bV9ZW2TljcegDNxsf+96A==",
+      "path": "system.memory/4.6.3",
+      "hashPath": "system.memory.4.6.3.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sQxefTnhagrhoq2ReR0D/6K0zJcr9Hrd6kikeXsA1I8kOCboTavcUC4r7TSfpKFeE163uMuxZcyfO1mGO3EN8Q==",
+      "path": "system.numerics.vectors/4.6.1",
+      "hashPath": "system.numerics.vectors.4.6.1.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2hBr6zdbIBTDE3EhK7NSVNdX58uTK6iHW/P/Axmm9sl1xoGSLqDvMtpecn226TNwHByFokYwJmt/aQQNlO5CRw==",
+      "path": "system.runtime.compilerservices.unsafe/6.1.2",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.1.2.nupkg.sha512"
+    },
+    "System.Text.Encodings.Web/10.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HvFIJXM/CMTRu6PBQmjukQZ/O32Vx5fOEYZs0kq0OD5s9vJQ19KHLWCVmnfh3gNC7pbYomm06tzOTgJBflr/nQ==",
+      "path": "system.text.encodings.web/10.0.8",
+      "hashPath": "system.text.encodings.web.10.0.8.nupkg.sha512"
+    },
+    "System.Text.Json/10.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/fysUDkD7oFGaRPoA7IaFs0wRoO3GlwlCNq2P+xWZqxLy1R4cktRSKfMjJDy9ymS4grL7IDVdt8de8L9a0z55Q==",
+      "path": "system.text.json/10.0.8",
+      "hashPath": "system.text.json.10.0.8.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Extensions/4.6.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7sCiwilJLYbTZELaKnc7RecBBXWXA+xMLQWZKWawBxYjp6DBlSE3v9/UcvKBvr1vv2tTOhipiogM8rRmxlhrVA==",
+      "path": "system.threading.tasks.extensions/4.6.3",
+      "hashPath": "system.threading.tasks.extensions.4.6.3.nupkg.sha512"
+    }
+  }
+}

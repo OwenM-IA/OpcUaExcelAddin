@@ -1,0 +1,5 @@
+{
+  "MachineSpeed": "ns=6;s=MachineSpeed",
+  "BeatCount": "ns=6;s=BeatCount",
+  "SongSelect": "ns=6;s=SongSelect"
+}
