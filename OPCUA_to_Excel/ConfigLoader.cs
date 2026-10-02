@@ -13,11 +13,13 @@ namespace OpcUaExcelAddin
     {
         private const int DefaultSamplingIntervalMs = 500;
         private const int DefaultPublishingIntervalMs = 500;
+        private const int DefaultRtdThrottleIntervalMs = 1000;
         private static readonly object SyncRoot = new object();
         private static Dictionary<string, string> _aliases = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
         private static string[] _endpointUrls = new string[0];
         private static int _samplingIntervalMs = DefaultSamplingIntervalMs;
         private static int _publishingIntervalMs = DefaultPublishingIntervalMs;
+        private static int _rtdThrottleIntervalMs = DefaultRtdThrottleIntervalMs;
         private static volatile bool _loaded;
 
         public static string EndpointUrl
@@ -53,6 +55,15 @@ namespace OpcUaExcelAddin
             {
                 EnsureLoaded();
                 return _publishingIntervalMs;
+            }
+        }
+
+        public static int RtdThrottleIntervalMs
+        {
+            get
+            {
+                EnsureLoaded();
+                return _rtdThrottleIntervalMs;
             }
         }
 
@@ -96,6 +107,9 @@ namespace OpcUaExcelAddin
                             _publishingIntervalMs = settings.PublishingIntervalMs > 0
                                 ? settings.PublishingIntervalMs
                                 : DefaultPublishingIntervalMs;
+                            _rtdThrottleIntervalMs = settings.RtdThrottleIntervalMs > 0
+                                ? settings.RtdThrottleIntervalMs
+                                : DefaultRtdThrottleIntervalMs;
 
                             string[] configuredEndpoints = settings.EndpointUrls;
                             if (configuredEndpoints == null || configuredEndpoints.Length == 0)
@@ -184,6 +198,7 @@ namespace OpcUaExcelAddin
             public string[] EndpointUrls { get; set; }
             public int SamplingIntervalMs { get; set; }
             public int PublishingIntervalMs { get; set; }
+            public int RtdThrottleIntervalMs { get; set; }
         }
     }
 }

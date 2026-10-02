@@ -18,6 +18,7 @@
     <ExcelDnaPackManagedDependencies>true</ExcelDnaPackManagedDependencies>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
     <PackageReference Include="ExcelDna.AddIn" Version="1.9.0" />
     <PackageReference Include="ExcelDna.Integration" Version="1.9.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />

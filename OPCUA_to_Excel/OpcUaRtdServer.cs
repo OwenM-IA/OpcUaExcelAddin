@@ -5,9 +5,12 @@ using ExcelDna.Integration.Rtd;
 
 namespace OpcUaExcelAddin
 {
+    [ProgId(ServerProgId)]
     [ComVisible(true)]
     public sealed class OpcUaRtdServer : ExcelRtdServer
     {
+        public const string ServerProgId = "OpcUaExcelAddin.LiveTags";
+
         private readonly ConcurrentDictionary<string, ConcurrentDictionary<int, Topic>> _topics =
             new ConcurrentDictionary<string, ConcurrentDictionary<int, Topic>>();
 

@@ -17,7 +17,7 @@ namespace OpcUaExcelAddin
 
             try
             {
-                return XlCall.RTD(typeof(OpcUaRtdServer).FullName, null, nodeId);
+                return XlCall.RTD(OpcUaRtdServer.ServerProgId, null, nodeId);
             }
             catch
             {

@@ -1,5 +1,5 @@
 {
   "MachineSpeed": "ns=6;s=MachineSpeed",
-  "BeatCount": "ns=6;s=BeatCount",
+  "EnableMusic": "ns=6;s=gCell_EnableMusic",
   "SongSelect": "ns=6;s=SongSelect"
 }
