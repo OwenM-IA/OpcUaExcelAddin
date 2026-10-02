@@ -2052,11 +2052,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\OPCUA_to_Excel\\OpcUaExcelAddin.csproj",
+      "projectUniqueName": "C:\\dev\\OpcUaExcelAddin-clean\\OPCUA_to_Excel\\OpcUaExcelAddin.csproj",
       "projectName": "OpcUaExcelAddin",
-      "projectPath": "C:\\dev\\OPCUA_to_Excel\\OpcUaExcelAddin.csproj",
+      "projectPath": "C:\\dev\\OpcUaExcelAddin-clean\\OPCUA_to_Excel\\OpcUaExcelAddin.csproj",
       "packagesPath": "C:\\Users\\omarshall\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\OPCUA_to_Excel\\obj\\",
+      "outputPath": "C:\\dev\\OpcUaExcelAddin-clean\\OPCUA_to_Excel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\omarshall\\AppData\\Roaming\\NuGet\\NuGet.Config"

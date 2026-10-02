@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = OpcUaExcelAddin
-build_property.ProjectDir = C:\dev\OPCUA_to_Excel\
+build_property.ProjectDir = C:\dev\OpcUaExcelAddin-clean\OPCUA_to_Excel\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

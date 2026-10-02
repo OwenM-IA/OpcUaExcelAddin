@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OpcUaExcelAddin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ca5fffe2af28a43f517cbbfa740441036a4c62c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69e3cf3356a4bee3377eb8f57e87a4b916c351d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("OpcUaExcelAddin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OpcUaExcelAddin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
