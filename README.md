@@ -45,4 +45,4 @@ After changing `appsettings.json` or `tags.json`, close Excel completely and reo
 
 The add-in currently accepts untrusted OPC UA server certificates automatically. Only use it with servers and networks you trust.
 
-This code is not tested or verified, use with caution
+This code is not tested or verified, use with caution!
