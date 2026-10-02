@@ -1,5 +1,7 @@
 # OPC UA Excel Add-in
 
+App made by Owen Marshall
+
 ## Install in Excel
 
 1. Copy the entire `publish` folder to a location you can keep, such as Documents. Keep `appsettings.json` and `tags.json` beside the `.xll` files. You do not need to copy the files into Excel's installation folder.
@@ -46,3 +48,13 @@ After changing `appsettings.json` or `tags.json`, close Excel completely and reo
 The add-in currently accepts untrusted OPC UA server certificates automatically. Only use it with servers and networks you trust.
 
 This code is not tested or verified, use with caution!
+
+## Why use this app?
+
+Excel does not natively support OPCUA tags. Online options have two main issues:
+   1. They are not free and
+   2. they require another application to be running.
+The closest/best option here is with OPCEXPERT, the only issue is that the free version has a 4 hour limit (as from their download page):
+   "The free version of OPC Expert comes with all the same features as the Pro version. The only difference is the free version will time out after four hours. If you plan to use OPC Expert features like tunnelling or trending, you’ll want to consider OPC Expert Pro"
+
+(as an aside to monitor OPCUA tags I have been using UaExpert as it is free and doesn't have a time limit. (It doesn't have live updating excel support.))
