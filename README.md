@@ -1,42 +1,48 @@
-# OpcUaExcelAddin
+# OPC UA Excel Add-in
 
-Excel-DNA add-in for reading live OPC UA values in Excel through subscriptions and RTD.
+## Install in Excel
 
-## Requirements
+1. Copy the entire `publish` folder to a location you can keep, such as Documents. Keep `appsettings.json` and `tags.json` beside the `.xll` files. You do not need to copy the files into Excel's installation folder.
+2. In Excel, check your version's bitness at **File > Account > About Excel**.
+3. Go to **File > Options > Add-ins**. At the bottom, set **Manage** to **Excel Add-ins**, click **Go**, then **Browse**.
+4. Select the matching add-in:
+   - 64-bit Excel: `OpcUaExcelAddin.xll`
+   - 32-bit Excel: `OpcUaExcelAddin-x86.xll`
+5. Select the add-in in the list and click **OK**.
 
-- Windows with Visual Studio 2022 and the .NET Framework 4.8 Developer Pack
-- Microsoft Excel; use the add-in matching Excel's bitness
-- Network access to an OPC UA server
+If you move the folder later, browse to the `.xll` at its new location. Keep the JSON files beside it.
 
-## Configure
+## Read a tag
 
-Edit `appsettings.json` and set `EndpointUrls` to an ordered list of OPC UA server endpoints. The add-in tries each endpoint in order and connects to the first available one; the same order is used for automatic reconnect. The legacy single `EndpointUrl` setting is also supported. `tags.json` is optional; keys are formula aliases and values are valid OPC UA NodeIds. The sample files are copied beside the packed add-ins during build.
-
-The requested `SamplingIntervalMs` and `PublishingIntervalMs` are configurable in `appsettings.json`; both default to 500 milliseconds when omitted or set to a non-positive value. The OPC UA server may revise these requested intervals.
-
-Examples:
+Enter a formula in a worksheet cell, replacing the example with a NodeId available on your OPC UA server:
 
 ```excel
-=OPCUA("ns=6;s=MyTag")
-=OPCUA("MachineSpeed")
+=OPCUA("ns=6;s=_gOBit")
 ```
 
-The first formula use creates a monitored item. Subsequent recalculations return the cached value; OPC UA data-change notifications update the cache and Excel RTD topic. Supported OPC UA scalar values are returned as Excel values; other values are returned as text.
+The computer running Excel must be able to reach the OPC UA server address configured in `appsettings.json`. The add-in tries configured addresses in order and connects to the first available one.
 
-The add-in connects automatically when loaded and retries the connection every five seconds after a failure. Error results are returned as `#NOT_CONNECTED`, `#NODE_NOT_FOUND`, `#BAD_NODEID`, or `#ERROR` text.
+The `SamplingIntervalMs` setting controls how often the server is asked to sample a tag. `PublishingIntervalMs` controls how often the server is asked to send subscription updates to Excel. Both default to 500 milliseconds. Lower values request faster updates but can increase server and network load; the server may revise the requested values. After changing these settings, close Excel completely and reopen it.
 
-## Build
+## Optional aliases
 
-1. Open `OpcUaExcelAddin.sln` in Visual Studio 2022.
-2. Restore NuGet packages and select **Release**.
-3. Build the solution.
+`tags.json` maps friendly names to NodeIds. For example:
 
-The Excel-DNA build targets generate packed files under `bin\Release\publish\`. `OpcUaExcelAddin.xll` is the 64-bit add-in; `OpcUaExcelAddin-x86.xll` is for 32-bit Excel. A matching Excel-DNA `.dna` file is also generated in the build output.
+```json
+{
+  "MachineSpeed": "ns=6;s=MachineSpeed"
+}
+```
 
-## Publish and install
+Then enter `=OPCUA("MachineSpeed")` in Excel instead of the full NodeId.
 
-Copy the matching `.xll`, `appsettings.json`, and `tags.json` from `bin\Release\publish\` to a deployment folder. In Excel, open **File > Options > Add-ins > Manage: Excel Add-ins > Go > Browse**, select the `.xll`, and enable it. Update the endpoint and aliases in the JSON files before distributing the folder.
+After changing `appsettings.json` or `tags.json`, close Excel completely and reopen it so the add-in reloads the settings.
 
-## Security note
+## Troubleshooting
 
-Untrusted OPC UA server certificates are automatically accepted to meet the requested behavior. The client also creates and stores its application certificate under `%LOCALAPPDATA%\OpcUaExcelAddin\pki`. Automatic certificate acceptance removes server identity verification; use only on a trusted network, and switch to certificate validation before production deployment.
+- `#NOT_CONNECTED`: Excel cannot connect to a configured OPC UA server. Check network access and the endpoint in `appsettings.json`.
+- `#NODE_NOT_FOUND`: Check that the NodeId and namespace index are correct for that server.
+
+The add-in currently accepts untrusted OPC UA server certificates automatically. Only use it with servers and networks you trust.
+
+This code is not tested or verified, use with caution
